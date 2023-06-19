@@ -10,11 +10,6 @@ declare global {
 
 function PricingScene() {
   return (
-    // <stripe-pricing-table
-    //   pricing-table-id="prctbl_1NJyB6DpTWyHvlvjKqTimLqj"
-    //   publishable-key="pk_test_NLj2El1Ie0mcO96Y8RXrYfdW00NNoyPSnj"
-    //   customer-email="tranquan221b@gmail.com"
-    // ></stripe-pricing-table>
     <form action="http://localhost:3030/api/stripe/create-checkout-session" method="POST">
       <input type="hidden" name="priceId" value="price_1NKgBIDpTWyHvlvjIGjpy9kD" />
       <button type="submit">Checkout</button>
